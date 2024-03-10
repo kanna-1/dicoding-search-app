@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# Search Function Solution
+
+## Overview
+
+This is a web-based application that implements a search functionality to search for courses based on the title. The search functionality returns courses that are relevant to the search query, regardless of case sensitivity.
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repository to your local machine:
+`git clone https://github.com/kanna-1/dicoding-search-app.git`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Second, navigate to the project directory:
+`cd search-app`
+
+Third, install dependencies:
+`npm install`
+
+Lastly, run the development server:
+`npm run`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How it Works
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Model Definition
 
-## Learn More
+The course data is stored in a JSON file named `courses.json`. Each course object in the JSON file follows the `Course` interface, defining properties such as `id`, `name`, `summary`, `description`, and `course_link`.
 
-To learn more about Next.js, take a look at the following resources:
+### Search Functionality
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The search functionality is implemented using React. When the user types a query into the search input field, the application filters the list of courses based on the user input. The filtering is done using the `filter` method, and the search results are stored in the `searchResult` state.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Rendering Search Results
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The search results are rendered in a square format. Each course in the search results is displayed as a square card, containing the course name, summary, and a link to learn more about the course.
