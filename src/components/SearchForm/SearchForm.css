@@ -1,0 +1,40 @@
+/* searchForm.css */
+
+.search-input {
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 8px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+  
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.course-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    width: calc(100% / 3.5);
+    position: relative; 
+}
+
+.no-results {
+    font-size: 20px;
+    margin-top: 180px;
+    align-items: center;
+    text-align: center;
+}
+  
+.course-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px; 
+}
+  
+
+  
+  
